@@ -1,0 +1,9 @@
+<p>FirstName:&nbsp;{{this.udata.FirstName|uppercase}}</p>
+<p>LastName:&nbsp;{{this.udata.LastName|lowercase}}</p>
+<p>{{this.udata.FirstName+""+this.udata.LastName}}<p>
+<p>{{this.udata.FirstName+this.udata.LastName | slice: 0:7}}</p>
+<p>{{this.udata.dateofjoining|date:'fullDate'}}</p>
+<p>{{this.udata.dateofjoining|date:'shortDate'}}</p>
+<p>{{this.udata.dateofjoining|date:'ss'}}</p>
+<p>{{this.udata.salary|currency:'CNY'}}</p>
+<router-outlet></router-outlet>
